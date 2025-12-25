@@ -5,6 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // ВАЖНО: замени 'xostapov' на имя твоего репозитория на GitHub!
+  base: mode === "production" ? "/site/" : "/",
   server: {
     host: "::",
     port: 8080,
